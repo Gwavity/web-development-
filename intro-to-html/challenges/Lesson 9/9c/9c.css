@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.div-outline {
+    margin-top: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 100px;
+    width: 300px;
+}
+
+.question {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.button {
+    margin-top: 15px;
+    margin-left: 10px;
+}

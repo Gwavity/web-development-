@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.base {
+    margin-top: 5px;
+    background-color: rgb(39, 39, 39);
+    width: 300px;
+    height: 100px;
+}
+
+.installmusic {
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+
+.desktop {
+    color: rgb(156, 156, 156);
+    font-size: 12px;
+    margin-left: 12px;
+}
