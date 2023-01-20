@@ -1,0 +1,71 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card {
+    height: 80px;
+    width: 300px;
+    display: inline-block;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+.pfp-style {
+    display: inline-block;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: inline-block;
+    margin-top: 10px;
+    width: 140px;
+    height: 70px;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+.username {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.bio, 
+.descriptor{
+    color: rgb(182, 182, 182);
+}
+
+.follow-card {
+    display: inline-block;
+    height: 55px;
+    width: 60px;
+    margin-top: 25px;
+    vertical-align: top;
+}
+
+.follow-button {
+    display: inline-block;
+    border: none;
+    background-color: #3e8fe4;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
