@@ -1,0 +1,18 @@
+.main {
+    display: flex; 
+}
+
+.leftbox {
+    background-color: lightblue;
+    width: 50px;
+}
+
+.middlebox {
+    background-color: lightpink;
+    flex: 1;
+}
+
+.rightbox {
+    background-color: lightblue;
+    width: 75px;
+}

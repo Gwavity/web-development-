@@ -1,0 +1,13 @@
+.main {
+    display: flex; 
+}
+
+.lightblue {
+    background-color: lightblue; 
+    width: 200px;
+}
+
+.lightpink {
+    background-color: lightpink;
+     width: 75px
+}

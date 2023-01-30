@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(202, 202, 202);
+    width: 230px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.notifications {
+    border-radius: 15px;
+    background-color: rgb(49, 82, 231);
+    color: white;
+    font-weight: bold;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
