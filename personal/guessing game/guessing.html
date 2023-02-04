@@ -3,10 +3,63 @@
     <head>
         <title>Number Guessing Game</title>
         <link rel="stylesheet" href="guessing.css">
+        <script>
+            var randomRange
+            var number
+            function getRandomRange()
+            {
+                let ranges = [20,50,100];
+                let choice = Math.floor(Math.random() * ranges.length);
+                randomRange = ranges[choice]
+
+                const box_placeholder = `Enter a number (0 - ${randomRange}):`;
+                document.getElementById("number-box").placeholder = box_placeholder;
+            }
+            function pickRandomNumber() 
+            {
+                let randomNum = Math.floor(Math.random() * (randomRange + 1));
+                return randomNum;
+            }
+            function checkGuess(guess) 
+            {
+                if(number == null ) 
+                {
+                    number = pickRandomNumber();
+                }
+                console.log(guess,number)
+                if(number == guess) 
+                {
+                    document.getElementById("number-box").value = "You won!!!";
+                    setTimeout(() => {
+                        location.reload()
+                    }, 3000);
+                    return
+                }
+                if(guess > number) 
+                {
+                    document.getElementById("number-box").value = "Your guess was too high!";
+                    return
+                } else 
+                {
+                    document.getElementById("number-box").value = "Your guess was too low!";
+                    return
+                }
+            }
+            function isValidGuess() 
+            {
+                const guess = document.getElementById("number-box").value
+                if(isNaN(guess) || guess.length <= 0) {
+                    document.getElementById("number-box").value = "Please enter a number.";
+                    return;
+                }
+                checkGuess(guess);
+            }
+        </script>
     </head>
-    <body style="background-color: rgb(199, 144, 255)">
+    <body onload="getRandomRange()" style="background-color: rgb(199, 144, 255)">
         <div class="title-box">Number Guessing Game</div>
-        <input type="text" placeholder="Enter a number:"; class="number-box">
-        <button class="guess-button">Guess</button>
+        <input onclick="this.value = ''"; type="text" id="number-box"; placeholder="Enter a number:"; class="number-box">
+        <button class="guess-button"; onclick="isValidGuess()">Guess</button>
     </body>
 </html>
+</style>
