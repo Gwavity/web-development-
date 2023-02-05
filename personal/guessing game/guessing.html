@@ -4,13 +4,13 @@
         <title>Number Guessing Game</title>
         <link rel="stylesheet" href="guessing.css">
         <script>
-            var randomRange
-            var number
+            var randomRange;
+            var number;
             function getRandomRange()
             {
                 let ranges = [20,50,100];
                 let choice = Math.floor(Math.random() * ranges.length);
-                randomRange = ranges[choice]
+                randomRange = ranges[choice];
 
                 const box_placeholder = `Enter a number (0 - ${randomRange}):`;
                 document.getElementById("number-box").placeholder = box_placeholder;
@@ -32,21 +32,21 @@
                     setTimeout(() => {
                         location.reload()
                     }, 3000);
-                    return
+                    return;
                 }
                 if(guess > number) 
                 {
                     document.getElementById("number-box").value = "Your guess was too high!";
-                    return
+                    return;
                 } else 
                 {
                     document.getElementById("number-box").value = "Your guess was too low!";
-                    return
+                    return;
                 }
             }
             function isValidGuess() 
             {
-                const guess = document.getElementById("number-box").value
+                const guess = document.getElementById("number-box").value;
                 if(isNaN(guess) || guess.length <= 0) {
                     document.getElementById("number-box").value = "Please enter a number.";
                     return;
