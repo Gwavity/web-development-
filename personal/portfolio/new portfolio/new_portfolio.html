@@ -3,6 +3,7 @@
   <head>
     <title>Alexander's Portfolio</title>
     <link rel="stylesheet" href="new_portfolio.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -11,11 +12,11 @@
 
       <h2>Hi, I'm <br><u>Alexander.</u></h2>
 
-      <video class="video-style" style="margin-left: 70px;" width="300" height="200" controls>
+      <video class="video-style" style="margin-left: 70px;" width="300" height="200">
         <source src="Resources/getidea.mp4" type="video/mp4">
       </video>
 
-      <video class="video-style" width="300" height="200" controls>
+      <video class="video-style" width="300" height="200">
         <source src="Resources/sniper.mp4" type="video/mp4">
       </video>
 
@@ -26,6 +27,18 @@
       <a href="https://github.com/Gwavity/Python-Projects/blob/main/discord%20bots/betterSnipeBot.py" target="_blank">
         <button class="github-button" style="display: inline-block;">Github</button>
       </a>
+      
+      <script>
+        $("video").hover(
+          function (){
+            if (this.controls) {
+              this.controls = false;
+            }else {
+              this.controls = true;
+            }
+          }
+        );
+      </script>
 
     </div>
 
