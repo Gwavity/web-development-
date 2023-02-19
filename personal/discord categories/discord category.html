@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <title>Categories Test</title>
@@ -9,5 +9,56 @@
             <span class="channel-arrow">&#62;</span>
             <span class="category-name">VOICE CHANNELS</span>
         </button>
+    </body>
+</html>
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Categories Test</title>
+        <link rel="stylesheet" href="discord categories.css">
+    </head>
+    <body>
+        <button onclick="flipArrow()" class="main-button">
+            <span id="triangle" class="channel-arrow">&#62;</span>
+            <span class="category-name">VOICE CHANNELS</span>
+        </button>
+        <div id="channels" class="border">
+            <button class="urls" onclick="window.open('https://github.com/Gwavity','_blank')" type="button">
+                <img class="images" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"> 
+                Github
+            </button>
+            <button class="urls">1</button>
+            <button class="urls">2</button>
+            <button class="urls">3</button>
+        </div>
+        <script>
+            var category = false;
+            var channelsSize = 0;
+            function flipArrow() {
+                category = !category;
+                const arrow = document.getElementById("triangle");
+                const channels = document.getElementById("channels");
+                const channelChildren = channels.childElementCount;
+                let height = 25 * channelChildren;
+                height += 5 * channelChildren;
+                arrow.style.transitionDuration = '0.4s';
+
+                if(category) {
+                    arrow.style.transform = 'rotate(90deg)';
+                    channelsSize = channels.style.height;
+                    channels.style.display = "grid";
+                    channels.style.height = `${height}px`;
+                    channels.style.backgroundColor = "rgb(43,45,49)";
+                    channels.style.borderColor = "rgb(43,45,49)";
+                } else {
+                    arrow.style.transform = 'rotate(0deg)';
+                    channels.style.display = "none";
+                    channels.style.height = channelsSize;
+                    channels.style.backgroundColor = "white";
+                    channels.style.borderColor = "white";
+                }
+            }
+        </script>
     </body>
 </html>
