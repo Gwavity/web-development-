@@ -1,0 +1,71 @@
+* {
+    font-family: Roboto;
+}
+
+.base {
+    background-color: #273042;
+    margin-top: 30px;
+}
+
+.name-div {
+    display: inline-flex;
+    margin-left: 30px;
+    min-height: 200px;
+    background-color: #363636;
+    height: 450px;    
+    width: 50vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+}
+
+.intro {
+    width: 100%;
+    margin: 0;
+    font-size: clamp(16px, 11vw, 200px);
+    color: #ffffff;
+}
+
+.main-buttons {
+    display: inline-block;
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.main-button-imgs {
+    height: 75px;
+}
+
+.info-buttons {
+    display: none;
+    border-style: solid;
+    position: absolute;
+    height: 150px;
+    top: 120px;
+    right: 0;
+    margin-right: 24px;
+    width: 250px;
+    background-color: #363636;
+    padding: 0px 10px 10px 10px;
+
+}
+
+.button {
+    margin-top: 5px;
+    margin-left: 3px;
+    background-color: #494949;
+    color: white;
+    font-size: 35px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-imgs {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 10px;
+}
