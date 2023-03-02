@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <script src="scripts/home.js"></script>
+    </head>
+    <body class="base">
+        <div class="name-div">
+            <p class="intro">Hi, I'm <br>Alexander</p>
+        </div>
+        <div class="main-buttons">
+            <button style=" background-color: #363636;">
+                <img style="filter: opacity(40%);" class="main-button-imgs" src="images/home-button-svgrepo-com.png">
+            </button>
+            <button onclick="openButtons(this)" style="cursor: pointer; margin-left: 10px; background-color: #363636;">
+                <img class="main-button-imgs" src="images/3 bar.png">
+            </button>
+        </div>
+        <div id="buttons" class="info-buttons">
+            <button class="button">
+                <img class="button-imgs" src="images/lightbulb-icon-png-icon-transparent-light-bulb-png.png">
+                <span>Projects</span>
+            </button>
+            <button class="button">
+                <img class="button-imgs" src="images/person_circle_icon_159926.png">
+                <span style="padding-right: 24px;">About</span>
+            </button>
+            <button class="button" onclick="window.open('https://github.com/Gwavity','_blank')">
+                <img style="filter:invert(1);;" class="button-imgs" src="images/25231.png">
+                <span style="margin-left: 4px; padding-right: 10px;">Github</span>
+            </button>
+        </div>
+    </body>
+</html>
