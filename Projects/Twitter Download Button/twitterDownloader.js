@@ -25,7 +25,7 @@
         var downloadButton = shareButton.cloneNode(true);
         var downloadSVG = downloadButton.getElementsByTagName("svg")[0];
 
-        downloadSVG.innerHTML = "<g><path d=\"M14.62,18.426l-5.764-6.965c0,0-0.877-0.828,0.074-0.828s3.248,0,3.248,0s0-0.557,0-1.416c0-2.449,0-6.906,0-8.723   c0,0-0.129-0.494,0.615-0.494c0.75,0,4.035,0,4.572,0c0.536,0,0.524,0.416,0.524,0.416c0,1.762,0,6.373,0,8.742   c0,0.768,0,1.266,0,1.266s1.842,0,2.998,0c1.154,0,0.285,0.867,0.285,0.867s-4.904,6.51-5.588,7.193   C15.092,18.979,14.62,18.426,14.62,18.426z\"></path></g>"
+        downloadSVG.innerHTML = "<g><path d=\"M 12 2.59 L 17.7 8.29 L 16.29 9.71 L 13 6.41 L 13 16 L 11 16 L 11 6.41 L 7.7 9.71 L 6.29 8.29\" transform=\"matrix(-1, 0, 0, -1, 23.990002, 18.59)\"></path><path d=\"m12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z\"></path></g>"
         grouped.appendChild(downloadButton);
         downloadSVG.addEventListener("mouseover", addColor, false);
         downloadSVG.addEventListener("mouseout", removeColor, false);
