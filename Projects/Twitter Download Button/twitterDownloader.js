@@ -55,11 +55,11 @@
 
         if (windowURL.includes("status") && !windowURL.includes("analytics"))
         {
-            const tweetID = windowURL.substring(windowURL.length,windowURL.search("status/") + 7);
+            const tweetID = windowURL.substring(windowURL.length, windowURL.search("status/") + 7);
             const url = `https://api.twitter.com/2/tweets?ids=${tweetID}&expansions=attachments.media_keys&media.fields=variants`;
 
             Http.open("GET", url);
-            Http.setRequestHeader("Authorization",`Bearer ${bearer}`);
+            Http.setRequestHeader("Authorization", `Bearer ${bearer}`);
             Http.send();
 
             Http.onreadystatechange = (e) => {
@@ -70,10 +70,10 @@
                     if(response.includes("bit_rate"))
                     {
                         //console.log(response);
-                        var bitRate = response.substring(response.search("bit_rate"),response.length);
+                        var bitRate = response.substring(response.search("bit_rate"), response.length);
                         //console.log(bitRate);
-                        var tempURL = bitRate.substring(bitRate.search("url"),bitRate.length);
-                        downloadURL = tempURL.substring(6,tempURL.search("}")-1);
+                        var tempURL = bitRate.substring(bitRate.search("url"), bitRate.length);
+                        downloadURL = tempURL.substring(6, tempURL.search("}")-1);
                         createDownload();
                     }
                 }
